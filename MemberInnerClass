@@ -1,0 +1,27 @@
+package com;
+
+class Outer
+{
+	private int a=9;
+	
+	class Inner    //Member Inner class
+	{
+		int b;
+		void show()
+		{
+			System.out.println("outer class private var="+a);
+		}
+	}
+}
+public class Tut13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Outer o=new Outer();
+		Outer.Inner i=o.new Inner();
+		i.show();
+		
+	}
+
+}
