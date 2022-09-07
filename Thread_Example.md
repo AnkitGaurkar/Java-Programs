@@ -22,3 +22,21 @@ public class Hello extends Thread
 	}
 
 }
+
+
+package com;
+
+
+ class MergeArr extends Thread
+ {
+	 public void run()
+	 {
+		 System.out.println("hi");
+	}
+public static void main (String[] args)
+{
+	MergeArr m1=new MergeArr();
+	m1.start();
+}
+	
+}
