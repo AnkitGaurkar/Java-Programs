@@ -35,3 +35,21 @@ public void run()
 	}
 	       }
 
+package com;
+
+ class MergeArr implements Runnable
+ {
+	 
+public static void main (String[] args)
+{
+	MergeArr m1=new MergeArr();
+	Thread t1=new Thread(m1);
+	t1.start();
+}
+
+@Override
+public void run() {
+	// TODO Auto-generated method stub
+	System.out.println("Hi");
+}}
+
